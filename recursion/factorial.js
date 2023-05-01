@@ -18,7 +18,15 @@ const factorial = (num) => {
   return total;
 };
 
-console.log(factorial(1));
+console.log(factorial(4));
 
-/* 
-4 * 4 - 1 (3) * 3-1 (2) * 2 - 1 (1) */
+//recursive solution
+
+const factorial2 = (num) => {
+  //base case
+  if (num === 1) return 1;
+  //changing input
+  return num * factorial2(num - 1);
+};
+
+console.log(factorial2(4));
