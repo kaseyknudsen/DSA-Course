@@ -27,6 +27,12 @@ const factorial2 = (num) => {
   if (num === 1) return 1;
   //changing input
   return num * factorial2(num - 1);
+  /* 
+     5 * 4
+                * 3
+                    * 2
+                
+*/
 };
 
-console.log(factorial2(4));
+console.log(factorial2(5));
